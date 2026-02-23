@@ -1,0 +1,6 @@
+2025-01-10 11:00:01 INFO Service started successfully
+2025-01-10 11:01:10 WARN Cache miss for key=9999
+2025-01-10 11:01:15 WARN Cache miss for key=8888
+2025-01-10 11:01:20 WARN Cache miss for key=7777
+2025-01-10 11:02:30 ERROR Auth token invalid for userId=42
+2025-01-10 11:02:35 ERROR Auth token invalid for userId=77
