@@ -1,0 +1,5 @@
+2025-01-10 10:00:01 INFO Service started successfully
+2025-01-10 10:01:10 WARN Cache miss for key=1234
+2025-01-10 10:02:22 INFO Request completed status=200 latency=120ms
+2025-01-10 10:03:15 WARN Cache miss for key=5678
+2025-01-10 10:04:33 INFO Request completed status=200 latency=98ms
