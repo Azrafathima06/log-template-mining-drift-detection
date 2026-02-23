@@ -81,3 +81,10 @@ These files simulate normal behavior and post-change behavior.
     }
   ]
 }
+
+## Privacy Notice
+
+This repository contains only synthetic sample logs and high-level implementation details.
+
+The original implementation was developed as part of the Samsung PRISM industry initiative.  
+All proprietary code, internal infrastructure details, and confidential datasets have been excluded.
