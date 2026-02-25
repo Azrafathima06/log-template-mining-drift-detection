@@ -7,7 +7,7 @@ All charts dynamically reflect time-window filtering, template aggregation, and 
 
 ## 1. Process-Level Analysis
 
-![Process Analysis](../../Images/process-analysis.png)
+![Process Analysis](../Images/process-analysis.png)
 
 This view provides a ranked breakdown of active processes (PID) based on log frequency within the selected time window.
 
@@ -24,13 +24,11 @@ Key capabilities:
 - Enables drill-down into thread-level inspection
 - Supports export functionality for reporting
 
-This allows rapid identification of dominant processes contributing to system log volume.
-
 ---
 
 ## 2. Thread-Level Breakdown
 
-![Thread Breakdown](../../Images/thread-breakdown.png)
+![Thread Breakdown](../Images/thread-breakdown.png)
 
 This screen provides thread-level (TID) distribution within a selected process.
 
@@ -43,13 +41,11 @@ Displayed information includes:
 - Ranked thread table
 - Recommendation classification
 
-This supports fine-grained root-cause analysis at execution-unit level.
-
 ---
 
 ## 3. Top Log Templates
 
-![Top Templates](../../Images/top-templates.png)
+![Top Templates](../Images/top-templates.png)
 
 This section displays the most frequent normalized log templates extracted through pattern mining.
 
@@ -57,29 +53,25 @@ Each template includes:
 
 - Frequency
 - Percentage contribution
-- Impact classification (HIGH / MEDIUM / NORMAL)
+- Impact classification
 - Example PID association
 - Priority level
 
-This view enables:
-
-- Identification of high-impact recurring patterns
-- Detection of abnormal log concentration
-- Prioritization for debugging or optimization
+This enables identification of dominant recurring patterns and supports prioritization for debugging or optimization.
 
 ---
 
-## System Architecture Context
+## System Context
 
 All visualizations are generated from structured JSON outputs produced by the log mining engine.
 
 The backend performs:
 
-- Timestamp parsing
-- Template normalization
-- Frequency aggregation
-- Time-window filtering
-- Baseline vs current window comparison
-- Drift and spike detection logic
+- Timestamp parsing  
+- Template normalization  
+- Frequency aggregation  
+- Time-window filtering  
+- Baseline vs current comparison  
+- Drift and spike detection logic  
 
 The UI consumes this structured output and renders interactive dashboards with drill-down capability.
