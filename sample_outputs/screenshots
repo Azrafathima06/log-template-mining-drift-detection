@@ -1,0 +1,44 @@
+### Process-Level Analysis
+
+![Process Analysis](Images/process-analysis.png)
+
+This view provides a ranked breakdown of active processes (PID) based on log frequency within the selected time window.  
+
+Processes are categorized into:
+- High Activity (>20%)
+- Medium Activity (10–20%)
+- Normal Activity (<10%)
+
+This enables quick identification of logging-heavy components that may impact system performance.  
+Users can drill down into a selected process to inspect thread-level behavior.
+
+---
+
+### Thread-Level Breakdown
+
+![Thread Breakdown](Images/thread-breakdown.png)
+
+This screen shows thread-level (TID) distribution within a selected process.  
+
+It highlights dominant threads responsible for excessive logging and provides:
+- Log frequency per thread
+- Percentage contribution to parent PID
+- Ranked thread view with recommendations
+
+This supports fine-grained root-cause analysis at execution path level.
+
+---
+
+### Top Log Templates
+
+![Top Templates](Images/top-templates.png)
+
+This section displays the most frequent normalized log templates extracted after pattern mining.
+
+Each template includes:
+- Frequency
+- Percentage contribution
+- Impact classification (HIGH / MEDIUM / NORMAL)
+- Example PID association
+
+This view helps identify high-impact recurring log patterns and supports prioritization for optimization or debugging.
