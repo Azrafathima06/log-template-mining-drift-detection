@@ -1,0 +1,16 @@
+{
+  "newTemplates": [
+    {
+      "template": "ERROR Auth token invalid for userId=*",
+      "currentCount": 2
+    }
+  ],
+  "spikeTemplates": [
+    {
+      "template": "WARN Cache miss for key=*",
+      "baselineCount": 2,
+      "currentCount": 3,
+      "ratio": 1.5
+    }
+  ]
+}
